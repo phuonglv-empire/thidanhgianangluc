@@ -238,7 +238,7 @@ func (u *examSessionUseCase) GetExamResults(sessionID uint) (*ExamSessionResult,
 }
 
 // compareAnswers compares user answer with correct answer
-func compareAnswers(userAnswer, correctAnswer json.RawMessage) bool {
+func compareAnswers(userAnswer, correctAnswer []byte) bool {
 	// Simple string comparison for now
 	// In production, you'd want more sophisticated comparison based on question type
 	return string(userAnswer) == string(correctAnswer)
