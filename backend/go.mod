@@ -1,6 +1,8 @@
 module github.com/phuonglv-empire/thidanhgianangluc/backend
 
-go 1.21
+go 1.23
+
+toolchain go1.24.12
 
 require (
 	github.com/gin-gonic/gin v1.9.1
